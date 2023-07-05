@@ -32,7 +32,6 @@ def visualize_ndvi(ndvi: np.ndarray, colormap: bool = True) -> None:
     if colormap:
         ndvi = cv2.applyColorMap((ndvi * 255).astype(np.uint8), cv2.COLORMAP_RAINBOW)
 
-    cv2.imwrite('individual_plant/ndvi_top_view.jpg', ndvi)
 
     # Show ndvi image
     cv2.imshow('NDVI image', ndvi)
@@ -48,11 +47,8 @@ if __name__ == '__main__':
 
     COLORMAP = True # set variable true if you want to visualize the NDVI value with a colormap
     
-    # nir_image_path = "/path/to/NIR/image"
-    # r_image_path = "/path/to/R/image"
-
-    nir_image_path = "topview/DJI_20230526130517_0001_MS_NIR.TIF"
-    r_image_path = "topview/DJI_20230526130517_0001_MS_R.TIF"
+    nir_image_path = "/path/to/NIR/image"
+    r_image_path = "/path/to/R/image"
 
    
     # Compute NDVI
