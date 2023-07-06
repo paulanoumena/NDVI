@@ -13,6 +13,10 @@ NDVI = (NIR - R) / (NIR + R)
 ```
 where NIR is the reflectance in the near-infrared band and R is the reflectance in the red band. The resulting NDVI value is a ratio of the difference between the two reflectances to their sum.
 
+<p align="center">
+<img src="https://github.com/paulanoumena/NDVI/blob/main/ndvi_process.png" width="800"/>
+</p>
+
 ## Requirements
 To run the script, you need to have OpenCV and NumPy libraries installed in your Python environment. You can install them using pip:
 
