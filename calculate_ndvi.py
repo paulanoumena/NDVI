@@ -32,7 +32,6 @@ def visualize_ndvi(ndvi: np.ndarray, colormap: bool = True) -> None:
     if colormap:
         ndvi = cv2.applyColorMap((ndvi * 255).astype(np.uint8), cv2.COLORMAP_RAINBOW)
 
-
     # Show ndvi image
     cv2.imshow('NDVI image', ndvi)
 
@@ -57,7 +56,6 @@ if __name__ == '__main__':
 
         # Visualize NDVI
         visualize_ndvi(ndvi, COLORMAP)
-
 
 
     except ValueError as e:
